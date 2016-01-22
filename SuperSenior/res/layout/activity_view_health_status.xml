@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:id="@+id/healthstatus_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/healthstatus_header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/status"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+    </LinearLayout>
+    
+    <View   
+        android:layout_width="fill_parent"  
+        android:layout_height="2dp"  
+        android:background="#33b5e5"  
+        /> 
+    
+    <LinearLayout
+        android:id="@+id/walkingsteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="9"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        
+        <Button 
+            android:id="@+id/walkingsteps_image"
+            android:layout_width="360dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/walkingstepsgraph"
+            android:layout_gravity="center"
+            />
+        <ImageView 
+            android:id="@+id/pulse_image"
+            android:layout_width="480dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/pulserecordgraph"
+            android:layout_gravity="center"
+            />
+        <ImageView 
+            android:id="@+id/temp_image"
+            android:layout_width="480dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/bodytempgraph"
+            android:layout_gravity="center"
+            />
+        
+            
+        
+    </LinearLayout>
+    
+        
+</LinearLayout>

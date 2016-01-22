@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <string-array name="measure_time">  
+        <item>7:00 am</item>
+        <item>10:00 am</item>  
+        <item>13:00 pm</item>  
+        <item>16:00 pm</item>
+        <item>19:00 pm</item>  
+        <item>22:00 pm</item>
+    </string-array>  
+</resources>  

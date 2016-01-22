@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/reminder_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/reminder_form_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/edit_reminder"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3" >
+
+            <Button
+                android:id="@+id/reminder_form_alert_virbate"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/vibrate" />
+
+            <Button
+                android:id="@+id/reminder_form_alert_sound"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sound_color" />
+
+            <Button
+                android:id="@+id/reminder_form_date"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/calendar"
+                android:onClick="showDatePickerDialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+            
+            
+            <Button
+                android:id="@+id/reminder_save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/save" />
+
+            <Button
+                android:id="@+id/form_edit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edit" />
+
+            <Button
+                android:id="@+id/form_delte"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminder_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:background="#E6E6E6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/reminder_form_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/reminder_form_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_general_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/reminder_name" />
+
+                <EditText
+                    android:id="@+id/et_general_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="Sore Throat medicine"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reminder_form_medine_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/medicine_name" />
+
+                <EditText
+                    android:id="@+id/reminder_form_et_medicine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/medicine_name_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reminder_form_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/quantity"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/pill1"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pill_color" />
+
+                <Button
+                    android:id="@+id/pill2"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pill_color" />
+
+                <Button
+                    android:id="@+id/pill3"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pill" />
+
+                <Button
+                    android:id="@+id/pill4"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pill" />
+
+                <EditText
+                    android:id="@+id/reminder_form_et_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="2" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reminder_form_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/reminder_form_tv_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/frequency" />
+
+                <Button
+                    android:id="@+id/reminder_form_morning"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="45dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/morning_color" />
+
+                <Button
+                    android:id="@+id/reminder_form_noon"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="45dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/noon_color" />
+
+                <Button
+                    android:id="@+id/reminder_form_night"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="45dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/night_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    >
+
+                    <EditText
+                        android:id="@+id/reminder_form_et_frequency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:ellipsize="start"
+                        android:layout_weight="3" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/num_per_day" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Reminder_date_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminder_weekday"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/mo_color"
+            android:textSize="12sp"
+			 />
+
+        <Button
+            android:id="@+id/tue"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/tu_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/wed"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/we_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/thu"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/th_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/fri"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/fr_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sat"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/sa_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/su_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+
+</LinearLayout>

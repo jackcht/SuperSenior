@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/menu_btn_new"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/record_new" />
+
+        <Button
+            android:id="@+id/menu_btn_view"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/menu_btn_upload"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/upload" />
+
+        <Button
+            android:id="@+id/menu_btn_setting"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/setting" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/healthrecord_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E6E6E6"
+        >
+    </ListView>
+
+    </LinearLayout>
+    
+    
+    
+</FrameLayout>

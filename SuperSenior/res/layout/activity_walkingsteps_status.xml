@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:id="@+id/walkingsteps_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/walkingsteps_header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/walkingstep"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+    </LinearLayout>
+    
+    <View   
+        android:layout_width="fill_parent"  
+        android:layout_height="2dp"  
+        android:background="#33b5e5"  
+        /> 
+    
+    <LinearLayout
+        android:id="@+id/walkingstepsdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        
+        <ImageView 
+            android:id="@+id/walkingstepdetailgraph"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/walkingstepdetailgraph1"
+            />  
+            
+        
+    </LinearLayout>
+    
+        
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:id="@+id/measuresetting_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/measuresetting_header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:text="@string/measure"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+    
+    <View   
+        android:layout_width="fill_parent"  
+        android:layout_height="2dp"  
+        android:background="#33b5e5"  
+        /> 
+	
+    <LinearLayout
+        android:id="@+id/setting_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+         <RelativeLayout 
+             android:id="@+id/pulse_row"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/txt_pulse"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+	           	android:layout_marginRight="15dp"
+	           	android:layout_marginEnd="15dp"
+	           	android:layout_centerVertical="true"
+	           	android:textSize="18sp"
+                 android:text="@string/pulse" />
+
+             <CheckBox 
+             	android:id="@+id/pulse_select"  
+	           	android:layout_width="wrap_content"  
+	           	android:layout_height="wrap_content"  
+	           	android:layout_alignParentRight="true"
+	           	android:layout_marginRight="20dp"
+	           	android:layout_marginEnd="20dp"
+	           	android:layout_alignParentEnd="true"
+	           	android:layout_centerVertical="true"
+	           	android:checked="false" 
+	           	/>
+             
+         </RelativeLayout >
+         
+         <View  
+             android:layout_width="fill_parent"  
+             android:layout_height="1px" 
+             android:background="?android:attr/listDivider"  
+	    />
+
+         <RelativeLayout 
+             android:id="@+id/bodytemp_row"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/txt_bodytemp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+	           	android:layout_marginRight="15dp"
+	           	android:layout_marginEnd="15dp"
+	           	android:layout_centerVertical="true"
+	           	android:textSize="18sp"
+                 android:text="@string/temperature" />
+
+             <CheckBox 
+             	android:id="@+id/bodytemp_select"  
+	           	android:layout_width="wrap_content"  
+	           	android:layout_height="wrap_content"  
+	           	android:layout_alignParentRight="true"
+	           	android:layout_marginRight="20dp"
+	           	android:layout_marginEnd="20dp"
+	           	android:layout_alignParentEnd="true"
+	           	android:layout_centerVertical="true"
+	           	android:checked="false" 
+	           	/>
+             
+         </RelativeLayout >
+         
+         <View  
+             android:layout_width="fill_parent"  
+             android:layout_height="1px" 
+             android:background="?android:attr/listDivider"  
+	    />
+         
+         <RelativeLayout 
+             android:id="@+id/bloodpressure_row"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/txt_bloodpressure"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+	           	android:layout_marginRight="15dp"
+	           	android:layout_marginEnd="15dp"
+	           	android:layout_centerVertical="true"
+	           	android:textSize="18sp"
+                 android:text="@string/pressure" />
+
+             <CheckBox 
+             	android:id="@+id/bloodpressure_select"  
+	           	android:layout_width="wrap_content"  
+	           	android:layout_height="wrap_content" 
+	           	android:layout_alignParentRight="true"
+	           	android:layout_marginRight="20dp"
+	           	android:layout_marginEnd="20dp"
+	           	android:layout_alignParentEnd="true"
+	           	android:layout_centerVertical="true" 
+	           	android:checked="false" 
+	           	/>
+         </RelativeLayout >
+         
+         <View  
+             android:layout_width="fill_parent"  
+             android:layout_height="1px" 
+             android:background="?android:attr/listDivider"  
+	     />
+         
+         <RelativeLayout 
+             android:id="@+id/step_row"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                android:id="@+id/txt_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+	           	android:layout_marginRight="15dp"
+	           	android:layout_marginEnd="15dp"
+	           	android:layout_centerVertical="true"
+	           	android:textSize="18sp"
+                android:text="@string/walkingstep" />
+
+             <CheckBox 
+             	android:id="@+id/step_select"  
+	           	android:layout_width="wrap_content"  
+	           	android:layout_height="wrap_content"  
+	           	android:layout_alignParentRight="true"
+	           	android:layout_marginRight="20dp"
+	           	android:layout_marginEnd="20dp"
+	           	android:layout_alignParentEnd="true"
+	           	android:layout_centerVertical="true"
+	           	android:checked="false"
+	           	/>
+         </RelativeLayout >
+         
+         <View  
+             android:layout_width="fill_parent"  
+             android:layout_height="1px" 
+             android:background="?android:attr/listDivider"  
+	     />
+         
+     </LinearLayout>
+     
+    <RelativeLayout   
+        android:layout_width="fill_parent"  
+        android:layout_height="55dp"  
+        android:orientation="horizontal"  
+        >  
+        <Button   
+            android:id="@+id/measure_setting_cancel"  
+            android:layout_width="100dp"      
+            android:layout_height="50dp"  
+            android:layout_marginLeft="20dp" 
+            android:layout_marginStart="20dp" 
+            android:text="@string/cancel"  
+            android:gravity="center"  
+            />  
+        <Button   
+            android:id="@+id/measure_setting_selectall"  
+            android:layout_width="100dp"      
+            android:layout_height="50dp"  
+            android:layout_marginLeft="128dp"  
+            android:layout_marginStart="128dp"
+            android:text="@string/selectall"  
+            android:gravity="center"  
+            />  
+        <Button   
+            android:id="@+id/measure_setting_ok"  
+            android:layout_width="100dp"      
+            android:layout_height="50dp"  
+            android:layout_marginLeft="236dp"
+            android:layout_marginStart="236dp"  
+            android:text="@string/ok"  
+            android:gravity="center"  
+            />  
+        <!--   
+        <ListView  
+	        android:id="@+id/lv"  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="fill_parent"   />  
+	    --> 
+        
+    </RelativeLayout> 
+    
+    
+
+           
+    </LinearLayout>

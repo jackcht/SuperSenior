@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout
+        android:id="@+id/temp_new_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/temp_new_header_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/create_temp_record"
+            android:textSize="30sp" 
+            android:textStyle="bold"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginStart="250dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/temp_save"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/save" />
+
+        <Button
+            android:id="@+id/temp_delete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/delete" />
+
+	</LinearLayout>
+	
+    <View   
+        android:layout_width="fill_parent"  
+        android:layout_height="2dp"  
+        android:background="#33b5e5"  
+    />
+	
+    <LinearLayout
+        android:id="@+id/record_temp_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+
+         <LinearLayout
+            android:id="@+id/record_temp_value"
+            android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+	        android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/txt_temp_value"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="3"
+                 android:textSize="20sp"
+                 android:text="@string/temperature_value" />
+
+             <EditText
+                 android:id="@+id/et_temp_value"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="7"
+                 android:inputType="numberDecimal"
+                 android:hint="e.g. 37.5"/>
+             
+             
+             <TextView
+                 android:id="@+id/txt_temp_unit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="3"
+                 android:layout_marginLeft="2dp"
+                 android:textSize="20sp"
+                 android:text="@string/temperature_unit" />
+             
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/record_temp_date"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+             
+             <TextView
+	            android:id="@+id/txt_temp_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_weight="3"
+	            android:text="@string/date"
+	            android:textSize="20sp" />
+
+             <Button
+                 android:id="@+id/temp_date_button"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="5"
+                 android:layout_marginLeft="10dp"
+        	     android:layout_marginRight="10dp"
+                 android:onClick="showDatePickerDialog"
+                 android:text="Select Date" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/record_temp_time"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+
+             <TextView
+	            android:id="@+id/txt_temp_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_weight="3"
+	            android:text="@string/time"
+	            android:textSize="20sp" />
+             
+             <Button
+                 android:id="@+id/temp_time_button"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="5"
+                 android:layout_marginLeft="10dp"
+        	     android:layout_marginRight="10dp"
+                 android:onClick="showTimePickerDialog"
+                 android:text="Select Time" />
+         </LinearLayout>
+         
+         <LinearLayout
+             android:id="@+id/record_temp_remarks"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/txt_temp_remarks"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="3"
+                 android:textSize="20sp"
+                 android:text="@string/remarks" />
+
+             <EditText
+                 android:id="@+id/et_temp_remarks"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="4"
+                 android:layout_marginRight="10dp"
+                 android:text=""/>
+             
+         </LinearLayout>
+     </LinearLayout>
+
+           
+    </LinearLayout>

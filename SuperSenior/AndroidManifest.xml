@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.supersenior"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/super_senior_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.supersenior.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.supersenior.Lock.LockPin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKPIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.supersenior.otherTest.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.supersenior.reminder.CreateMedicineReminder"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATEREMINDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.supersenior.ActivityForFragment"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIVITYFORFRAGMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.supersenior.reminder.EditReminder"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDITREMINDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.reminder.CreateReminderAppointment"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATEREMINDERAPPOINTMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.ViewHealthRecord"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEWHEALTHRECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.HealthSetting"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.HEALTHSETTING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.ViewWalkingstepStatus"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEWWALKINGSTEPSTATUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.CreateNewRecord"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATENEWRECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.CreatePulseRecord"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATEPULSERECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.EditPulseRecord"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDITPULSERECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.CreateBodyPressureRecord"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATEBODYPRESSURERECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name ="com.example.supersenior.record.CreateBodyTempRecord"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATEBODYTEMPRECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+           android:name ="com.example.supersenior.record.ConnectDevices"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CONNECTDEVICES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+           android:name ="com.example.supersenior.record.AutoMeasureRecord"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.AUTOMEASURERECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
